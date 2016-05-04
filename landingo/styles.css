@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "landingo";
+  src:url("fonts/landingo.eot");
+  src:url("fonts/landingo.eot?#iefix") format("embedded-opentype"),
+    url("fonts/landingo.woff") format("woff"),
+    url("fonts/landingo.ttf") format("truetype"),
+    url("fonts/landingo.svg#landingo") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "landingo" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "landingo" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-design-pencil-rule-streamline:before {
+  content: "a";
+}
+.icon-computer-imac:before {
+  content: "b";
+}
+.icon-design-graphic-tablet-streamline-tablet:before {
+  content: "c";
+}
+.icon-caddie-shop-shopping-streamline:before {
+  content: "d";
+}
+.icon-computer-network-streamline:before {
+  content: "e";
+}
+.icon-streamline-umbrella-weather:before {
+  content: "f";
+}
+.icon-speech-streamline-talk-user:before {
+  content: "g";
+}
+.icon-remote-control-streamline:before {
+  content: "h";
+}
+.icon-dashboard-speed-streamline:before {
+  content: "i";
+}
+.icon-frame-picture-streamline:before {
+  content: "j";
+}
+.icon-settings-streamline:before {
+  content: "k";
+}
+.icon-settings-streamline-2:before {
+  content: "l";
+}
+.icon-streamline-sync:before {
+  content: "m";
+}
