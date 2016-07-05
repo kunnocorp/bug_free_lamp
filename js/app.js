@@ -19,17 +19,17 @@
             var anchor = $(this);
             $('html, body').stop().animate({
                 scrollTop: $(anchor.attr('href')).offset().top
-            }, 1000);
+            }, 0);
             e.preventDefault();
         });
 
 
         //
-        $(document).on('click', '.navbar-collapse.in', function (e) {
-            if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
-                $(this).collapse('hide');
-            }
-        });
+        // $(document).on('click', '.navbar-collapse.in', function (e) {
+        //     if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
+        //         $(this).collapse('hide');
+        //     }
+        // });
         /* =======================================
          * Video Embed Async Load
          * =======================================
@@ -59,12 +59,11 @@
              
                         //if (winWidth > 767) {
                         var $scrollHeight = $(window).scrollTop();
-                        if ($scrollHeight > 0) {
-                            $('#header').slideDown(0);
-                        } else {
+                        if ($scrollHeight < 0) {
                             $('#header').slideUp(0);
+                        } else {
+                            $('#header').slideDown(0);
                         }
-                        //}
              
                         //got o top
                         if ($(this).scrollTop() > 0) {

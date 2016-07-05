@@ -97,7 +97,6 @@ iframe {
     padding: 150px 0;
 }
 #image {
-    background-image: url(../images/ohs.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -331,11 +330,8 @@ header .navbar-default .navbar-nav > .current > a:focus {
     font-weight: 300;
     color: #ccc;
 }
-.navbar-fixed-top,
-{
-    height: 60px;
-    /*    display: block;*/
-    position: fixed;
+.navbar-fixed-top{
+position: fixed;
 }
 .nav-button {
     background-color: #E76F07;
@@ -346,6 +342,10 @@ header .navbar-default .navbar-nav > .current > a:focus {
 }
 .sign {
     color: #E76F07;
+}
+#navigation {
+position: fixed;
+z-index: 10;
 }
 
 /*
